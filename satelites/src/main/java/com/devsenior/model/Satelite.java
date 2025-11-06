@@ -15,5 +15,30 @@ public class Satelite {
         mediciones = new ArrayList<>();//Siempre instanciar primero
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public Estado getEstado() {
+        return estado;
+    }
+
+    public void setEstado(Estado estado) {
+        this.estado = estado;
+    }
+
+    public List<Double> getMediciones() {
+        return mediciones;
+    }
+
+    public void agregarMedicion( double medicion) {
+        this.mediciones.add(medicion);
+    }
+    
+
     
 }
